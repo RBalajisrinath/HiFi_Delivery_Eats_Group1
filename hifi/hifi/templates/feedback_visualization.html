@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            color: #616055;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Feedback Analysis</h1>
+        <h2>Average Rating: {{ average_rating }}</h2>
+        <div>
+            <h3>Rating Distribution:</h3>
+            {{ rating_plot_div | safe }}
+        </div>
+        <div>
+            <h3>Sentiment Distribution:</h3>
+            {{ sentiment_plot_div | safe }}
+        </div>
+        
+        <div>
+            <h3>Distribution of Sentiments in Feedback:</h3>
+            <img src="{{ url_for('static', filename='sentiment_pie_chart.png') }}" alt="Sentiment Pie Chart">
+        </div>
+    </div>
+</body>
+</html>

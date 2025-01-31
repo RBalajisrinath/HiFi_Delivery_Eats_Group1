@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 280px;
+    height: 100%;
+    background-color:  #CD853F;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    margin-bottom: 55px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile-info h2 {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.profile-info p {
+    font-size: 14px;
+}
+.menu-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.sidebar nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #8B4513;
+}
+/* Main Content Styles */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #FFDAB9;
+    margin-left: 20%;
+    margin-bottom: 55px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 20px 0; 
+    font-size: 14px; 
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+footer p {
+    margin: 0;
+}
